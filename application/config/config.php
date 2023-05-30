@@ -19,8 +19,8 @@ $protocol =
     (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on') ||
     (isset($_SERVER['SERVER_PORT']) && (int) $_SERVER['SERVER_PORT'] === 443) ||
     (isset($_SERVER['HTTP_X_FORWARDED_PROTO']) && $_SERVER['HTTP_X_FORWARDED_PROTO'] === 'https')
-        ? 'https://'
-        : 'http://';
+    ? 'https://'
+    : 'http://';
 
 $domain = $_SERVER['HTTP_HOST'] ?? 'localhost';
 
@@ -341,8 +341,8 @@ $config['cache_path'] = __DIR__ . '/../../storage/cache/';
 */
 $config['encryption_key'] =
     defined('ENCRYPTION_KEY') && !empty(ENCRYPTION_KEY)
-        ? ENCRYPTION_KEY
-        : hash('sha256', APPPATH . (defined('DB_PASSWORD') ? DB_PASSWORD : '') . php_uname(), true);
+    ? ENCRYPTION_KEY
+    : hash('sha256', APPPATH . (defined('DB_PASSWORD') ? DB_PASSWORD : '') . php_uname(), true);
 
 /*
 |--------------------------------------------------------------------------
