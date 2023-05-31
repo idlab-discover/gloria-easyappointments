@@ -12,5 +12,5 @@ $config['smtp_auth'] = FALSE; //or FALSE for anonymous relay.
 $config['smtp_host'] = 'smtp.ilabt.imec.be';
 // $config['smtp_user'] = '';
 // $config['smtp_pass'] = '';
-$config['smtp_crypto'] = 'tls'; // or 'tls'
+// $config['smtp_crypto'] = 'tls'; // or 'tls'
 $config['smtp_port'] = 587;
