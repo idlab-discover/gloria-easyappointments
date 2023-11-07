@@ -30,7 +30,6 @@
 
             <div id="header">
                 <img src="<?= base_url('assets/img/logo_brand.png') ?>" class="brand-logo">
-                <span id="company-name"><?= $company_name ?></span>
 
                 <div id="steps">
                     <div id="step-1" class="book-step active-step"
