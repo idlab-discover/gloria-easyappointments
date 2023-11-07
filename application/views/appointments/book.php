@@ -29,6 +29,7 @@
             <!-- FRAME TOP BAR -->
 
             <div id="header">
+                <img src="<?= base_url('assets/img/logo_brand.png') ?>">
                 <span id="company-name"><?= $company_name ?></span>
 
                 <div id="steps">
@@ -282,20 +283,23 @@
                             <div class="form-group">
                                 <label for="address" class="control-label">
                                     <?= lang('address') ?>
+                                    <span class="text-danger">*</span>
                                 </label>
-                                <input type="text" id="address" class="form-control" maxlength="120"/>
+                                <input type="text" id="address" class="required form-control" maxlength="120"/>
                             </div>
                             <div class="form-group">
                                 <label for="city" class="control-label">
                                     <?= lang('city') ?>
+                                    <span class="text-danger">*</span>
                                 </label>
-                                <input type="text" id="city" class="form-control" maxlength="120"/>
+                                <input type="text" id="city" class="required form-control" maxlength="120"/>
                             </div>
                             <div class="form-group">
                                 <label for="zip-code" class="control-label">
                                     <?= lang('zip_code') ?>
+                                    <span class="text-danger">*</span>
                                 </label>
-                                <input type="text" id="zip-code" class="form-control" maxlength="120"/>
+                                <input type="text" id="zip-code" class="required form-control" maxlength="120"/>
                             </div>
                             <div class="form-group">
                                 <label for="notes" class="control-label">
