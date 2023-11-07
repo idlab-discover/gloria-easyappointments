@@ -29,7 +29,7 @@
             <!-- FRAME TOP BAR -->
 
             <div id="header">
-                <img src="<?= base_url('assets/img/logo_brand.png') ?>">
+                <img src="<?= base_url('assets/img/logo_brand.png') ?>" class="brand-logo">
                 <span id="company-name"><?= $company_name ?></span>
 
                 <div id="steps">

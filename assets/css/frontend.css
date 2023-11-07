@@ -28,6 +28,11 @@ body {
     min-height: 100%;
 }
 
+.brand-logo {
+    height: 56px;
+    aspect-ratio: 1;
+}
+
 /* BOOK APPOINTMENT WIZARD
  ------------------------------------------------------------------------------ */
 
