@@ -1,3 +1,5 @@
+@import url('./vars.css');
+
 /* ----------------------------------------------------------------------------
  * Easy!Appointments - Open Source Web Scheduler
  *
@@ -31,7 +33,7 @@ body .ui-dialog .ui-dialog-titlebar-close {
 }
 
 body .ui-draggable .ui-dialog-titlebar {
-    background: #429a82;
+    background: var(--main-color);
     color: #FFF;
     font-size: 1.2em;
     font-weight: lighter;
@@ -67,7 +69,7 @@ body .ui-dialog #error-technical {
 }
 
 body .ui-widget.ui-widget-content {
-    border: 1px solid #429a82;
+    border: 1px solid var(--main-color);
     padding: 0;
 }
 
@@ -83,7 +85,7 @@ body .ui-datepicker {
 
 body .ui-datepicker .ui-widget-header {
     border: none;
-    background: #429a82;
+    background: var(--main-color);
     border-radius: 0;
 }
 
@@ -97,7 +99,7 @@ body .ui-datepicker .ui-datepicker-title {
 }
 
 body .ui-datepicker th {
-    background: #429a82;
+    background: var(--main-color);
     color: #FFF;
 }
 
@@ -119,7 +121,7 @@ body .ui-datepicker td span {
 html body .ui-datepicker td a.ui-state-active {
     color: #FFF !important;
     font-weight: bold !important;
-    background: #429a82 !important;
+    background: var(--main-color) !important;
     border-radius: 50px;
     width: 24px;
     height: 24px;
@@ -158,8 +160,8 @@ body .ui-datepicker .ui-datepicker-next-hover {
 
 body .ui-datepicker .ui-slider-handle {
     border-radius: 0;
-    border-color: #429a82;
-    background-color: #429a82;
+    border-color: var(--main-color);
+    background-color: var(--main-color);
 }
 
 body .ui-priority-primary,
