@@ -4,10 +4,8 @@
 </head>
 <body style="font: 13px arial, helvetica, tahoma;">
 <div class="email-container" style="width: 650px; border: 1px solid #eee;">
-    <div id="header" style="background-color: #429a82; height: 45px; padding: 10px 15px;">
-        <strong id="logo" style="color: white; font-size: 20px; margin-top: 10px; display: inline-block">
-            <?= $company_name ?>
-        </strong>
+    <div id="header" style="border-bottom: 1px solid #e4e1c9; height: 45px; padding: 10px 15px;">
+        <img src="<?= base_url('assets/img/logo_brand.png') ?>" style="height: 35px">
     </div>
 
     <div id="content" style="padding: 10px 15px;">
@@ -53,8 +51,12 @@
                 <td style="padding: 3px;"><?= $customer_phone ?></td>
             </tr>
             <tr>
-                <td class="label" style="padding: 3px;font-weight: bold;"><?= lang('address') ?></td>
-                <td style="padding: 3px;"><?= $customer_address ?></td>
+                <td class="label" style="padding: 3px;font-weight: bold;"><?= lang('zip_code') ?></td>
+                <td style="padding: 3px;"><?= $customer_zip_code ?></td>
+            </tr>
+            <tr>
+                <td class="label" style="padding: 3px;font-weight: bold;"><?= lang('city') ?></td>
+                <td style="padding: 3px;"><?= $customer_city ?></td>
             </tr>
         </table>
 
