@@ -426,14 +426,13 @@ class Appointments extends EA_Controller {
             // calculating the available time periods of the provider.
             $exclude_appointment_id = $this->input->post('manage_mode') === 'true' ? $this->input->post('appointment_id') : NULL;
 
-            
+
             // If the user has selected the "any-provider" option then we will need to search for an available provider
             // that will provide the requested service.
             $service = $this->services_model->get_row($service_id);
 
-            if ($provider_id === ANY_PROVIDER)
-            {
-                $providers = $this->providers_model->get();
+            if ($provider_id === ANY_PROVIDER) {
+                $providers = $this->providers_model->get_batch();
 
                 $available_hours = [];
 
