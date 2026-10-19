@@ -24,13 +24,14 @@
  * If you are updating from version 1.0 you will have to create a new "config.php"
  * file because the old "configuration.php" is not used anymore.
  */
-class Config {
+class Config
+{
 
     // ------------------------------------------------------------------------
     // GENERAL SETTINGS
     // ------------------------------------------------------------------------
 
-    const BASE_URL      = 'https://gloria.ilabt.imec.be';
+    const BASE_URL      = 'http://localhost';
     const LANGUAGE      = 'dutch';
     const DEBUG_MODE    = FALSE;
 
@@ -38,10 +39,10 @@ class Config {
     // DATABASE SETTINGS
     // ------------------------------------------------------------------------
 
-    const DB_HOST       = 'localhost';
+    const DB_HOST       = 'mysql';
     const DB_NAME       = 'easyappointments';
-    const DB_USERNAME   = 'root';
-    const DB_PASSWORD   = 'root';
+    const DB_USERNAME   = 'user';
+    const DB_PASSWORD   = 'password';
 
     // ------------------------------------------------------------------------
     // GOOGLE CALENDAR SYNC
